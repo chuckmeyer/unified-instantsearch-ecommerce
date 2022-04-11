@@ -7,7 +7,7 @@ export function Hit({ hit, insights, view }) {
   return (
     <article className="uni-Hit">
       <a
-        href={hit.url}
+        href={`/products/${hit.handle}`}
         className="uni-Hit-inner"
         onClick={() =>
           insights('clickedObjectIDsAfterSearch', {
@@ -16,21 +16,21 @@ export function Hit({ hit, insights, view }) {
         }
       >
         <div className="uni-Hit-image">
-          <img src={hit.image} alt={hit.name} loading="lazy" />
+          <img src={hit.image} alt={hit.title} loading="lazy" />
         </div>
 
         <div className="uni-Hit-Body">
           <header className="uni-Hit-header">
-            <h2 className="uni-Hit-category">{hit.categories[0]}</h2>
+            <h2 className="uni-Hit-category">{hit.product_type}</h2>
 
             <h1 className="uni-Hit-title">
-              <Highlight attribute="name" tagName="mark" hit={hit} />
+              <Highlight attribute="title" tagName="mark" hit={hit} />
             </h1>
           </header>
 
           {view === 'list' && (
             <p className="uni-Hit-description">
-              <Snippet attribute="description" tagName="mark" hit={hit} />
+              <Snippet attribute="body_html_safe" tagName="mark" hit={hit} />
             </p>
           )}
 

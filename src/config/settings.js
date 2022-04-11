@@ -30,14 +30,14 @@ import { Hit } from './Hit';
 |
 */
 
-export const inputContainer = '#search-button';
+export const inputContainer = '.site-header__search';
 export const inputContent = 'Search for products';
 export const keyboardShortcuts = ['/'];
-export const appId = 'latency';
-export const searchApiKey = '6be0576ff61c053d5f9a3225e2a90f76';
+export const appId = 'H2M6B61JEG';
+export const searchApiKey = 'b1bdfc3258823bb4468815a664dce649';
 export const hitComponent = Hit;
 export const index = {
-  indexName: 'instant_search',
+  indexName: 'shopify_products',
   searchParameters: {
     analytics: true,
     clickAnalytics: true,
@@ -80,11 +80,11 @@ export const setUserToken = (setToken) => {
 export const sorts = [
   {
     label: 'Price ascending',
-    value: 'instant_search_price_asc',
+    value: 'shopify_products_price_asc',
   },
   {
     label: 'Price descending',
-    value: 'instant_search_price_desc',
+    value: 'shopify_products_price_des',
   },
 ];
 
@@ -104,16 +104,13 @@ export const sorts = [
 
 export const refinements = [
   {
-    type: 'hierarchical',
-    header: 'Categories',
+    type: 'list',
+    header: 'Category',
     label: 'Category',
     options: {
       attributes: [
-        'hierarchicalCategories.lvl0',
-        'hierarchicalCategories.lvl1',
+        'product_type',
       ],
-      limit: 6,
-      showMore: true,
     },
   },
   {
@@ -121,7 +118,7 @@ export const refinements = [
     header: 'Brands',
     label: 'Brand',
     options: {
-      attribute: 'brand',
+      attribute: 'vendor',
       searchable: true,
       showMore: true,
       limit: 6,
@@ -162,7 +159,6 @@ export const refinements = [
 | from what your users are searching for. If your index isn't ready yet, feel
 | free to comment out this section and re-enable it later.
 |
-*/
 
 export const suggestionsIndex = {
   indexName: 'instant_search_demo_query_suggestions',
@@ -171,7 +167,6 @@ export const suggestionsIndex = {
   },
 };
 
-/*
 |-------------------------------------------------------------------------------
 | Styles                                            http://alg.li/unified/styles
 |-------------------------------------------------------------------------------
