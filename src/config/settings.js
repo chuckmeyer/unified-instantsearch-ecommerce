@@ -30,7 +30,7 @@ import { Hit } from './Hit';
 |
 */
 
-export const inputContainer = 'header-bard__module.header-bar__search';
+export const inputContainer = 'header-bar__module.header-bar__search';
 export const inputContent = 'Search for products';
 export const keyboardShortcuts = ['/'];
 export const appId = 'H2M6B61JEG';
