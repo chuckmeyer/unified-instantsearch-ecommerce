@@ -37,7 +37,7 @@ export const appId = 'H2M6B61JEG';
 export const searchApiKey = 'b1bdfc3258823bb4468815a664dce649';
 export const hitComponent = Hit;
 export const index = {
-  indexName: 'shopify_products',
+  indexName: 'shopify_algolia_products',
   searchParameters: {
     analytics: true,
     clickAnalytics: true,
