@@ -30,7 +30,7 @@ import { Hit } from './Hit';
 |
 */
 
-export const inputContainer = '.site-header__icon-wrapper';
+export const inputContainer = '.site-header__icons-wrapper';
 export const inputContent = 'Search for products';
 export const keyboardShortcuts = ['/'];
 export const appId = 'H2M6B61JEG';
