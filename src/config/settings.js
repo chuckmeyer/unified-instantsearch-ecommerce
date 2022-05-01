@@ -80,11 +80,11 @@ export const setUserToken = (setToken) => {
 export const sorts = [
   {
     label: 'Price ascending',
-    value: 'shopify_products_price_asc',
+    value: 'shopify_algolia_products_price_asc',
   },
   {
     label: 'Price descending',
-    value: 'shopify_products_price_des',
+    value: 'shopify_algolia_products_price_des',
   },
 ];
 
