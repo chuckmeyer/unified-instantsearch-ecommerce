@@ -108,9 +108,7 @@ export const refinements = [
     header: 'Category',
     label: 'Category',
     options: {
-      attributes: [
-        'product_type',
-      ],
+      attributes: 'product_type',
     },
   },
   {
