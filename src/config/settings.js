@@ -186,6 +186,7 @@ export const suggestionsIndex = {
 
 export const styles = {
   colors: {
+    // switch primary to nebula blue #5468FF
     primary: '#d02139',
     secondary: '#21243d',
   },
