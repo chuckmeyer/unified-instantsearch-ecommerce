@@ -104,6 +104,22 @@ export const sorts = [
 
 export const refinements = [
   {
+    type: 'category',
+    header: 'Products',
+    label: 'Products',
+    options: {
+      attribute: 'product_type',
+      searchable: true,
+      showMore: true,
+      limit: 6,
+      showMoreLimit: 20,
+      translations: {
+        showMore: (expanded) =>
+          expanded ? '- View fewer products' : '+ View more products',
+      },
+    },
+  },
+   {
     type: 'list',
     header: 'Brands',
     label: 'Brand',
