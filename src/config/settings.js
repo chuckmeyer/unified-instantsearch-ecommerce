@@ -105,14 +105,6 @@ export const sorts = [
 export const refinements = [
   {
     type: 'list',
-    header: 'Category',
-    label: 'Category',
-    options: {
-      attributes: 'product_type',
-    },
-  },
-  {
-    type: 'list',
     header: 'Brands',
     label: 'Brand',
     options: {
